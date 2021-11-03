@@ -1,0 +1,249 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 8,
+    "passes": 6,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-09-23T14:39:28.519Z",
+    "end": "2021-09-23T14:40:01.365Z",
+    "duration": 32846,
+    "testsRegistered": 8,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "300ecaae-0e18-462f-839b-3b72090779cb",
+      "title": "",
+      "fullFile": "cypress/integration/AdditionalFlows.feature",
+      "file": "cypress/integration/AdditionalFlows.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6fbabd8e-1aba-4e03-ad79-430f88e94345",
+          "title": "Verify additional flows for search functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify that after a successful result displayed for character search, if the search form is cleared and clicked Search, empty results list should be displayed",
+              "fullTitle": "Verify additional flows for search functionality Verify that after a successful result displayed for character search, if the search form is cleared and clicked Search, empty results list should be displayed",
+              "timedOut": null,
+              "duration": 6124,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: expected 'Luke SkywalkerGender: male Birth year: 19BBY Eye color: blue Skin color: fair ' to equal 'Not found.'",
+                "estack": "AssertionError: expected 'Luke SkywalkerGender: male Birth year: 19BBY Eye color: blue Skin color: fair ' to equal 'Not found.'\n    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress/integration/AdditionalFlows.feature:80:25)",
+                "diff": "- 'Luke SkywalkerGender: male Birth year: 19BBY Eye color: blue Skin color: fair '\n+ 'Not found.'\n"
+              },
+              "uuid": "bb3a605f-76be-4693-bf77-56dd9ad263b8",
+              "parentUUID": "6fbabd8e-1aba-4e03-ad79-430f88e94345",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that after a successful result displayed for character search, if the search form is cleared and clicked Search, empty results list should be displayed",
+              "fullTitle": "Verify additional flows for search functionality Verify that after a successful result displayed for character search, if the search form is cleared and clicked Search, empty results list should be displayed",
+              "timedOut": null,
+              "duration": 5828,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: expected 'TatooinePopulation: 200000 Climate: arid Gravity: 1 standard ' to equal 'Not found.'",
+                "estack": "AssertionError: expected 'TatooinePopulation: 200000 Climate: arid Gravity: 1 standard ' to equal 'Not found.'\n    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress/integration/AdditionalFlows.feature:80:25)",
+                "diff": "- 'TatooinePopulation: 200000 Climate: arid Gravity: 1 standard '\n+ 'Not found.'\n"
+              },
+              "uuid": "ae7df832-3233-449c-8318-8be3dddd1673",
+              "parentUUID": "6fbabd8e-1aba-4e03-ad79-430f88e94345",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that the successful result is displayed for character search by pressing enter",
+              "fullTitle": "Verify additional flows for search functionality Verify that the successful result is displayed for character search by pressing enter",
+              "timedOut": null,
+              "duration": 1072,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "84ce9d4d-a7cf-4bfc-ad40-a5ab52dcb1c6",
+              "parentUUID": "6fbabd8e-1aba-4e03-ad79-430f88e94345",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that the successful result is displayed for planet search by pressing enter",
+              "fullTitle": "Verify additional flows for search functionality Verify that the successful result is displayed for planet search by pressing enter",
+              "timedOut": null,
+              "duration": 962,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "61666ac4-36ca-4365-9da1-de771546e2ae",
+              "parentUUID": "6fbabd8e-1aba-4e03-ad79-430f88e94345",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that after a successful result displayed for character search, if the planet radio button is checked and clicked Search, no results list should be displayed",
+              "fullTitle": "Verify additional flows for search functionality Verify that after a successful result displayed for character search, if the planet radio button is checked and clicked Search, no results list should be displayed",
+              "timedOut": null,
+              "duration": 5603,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "50b19b5d-8d9b-4905-ae01-547b7f0f9dfc",
+              "parentUUID": "6fbabd8e-1aba-4e03-ad79-430f88e94345",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that after a successful result displayed for planet search, if the people radio button is checked and clicked Search, no results list should be displayed",
+              "fullTitle": "Verify additional flows for search functionality Verify that after a successful result displayed for planet search, if the people radio button is checked and clicked Search, no results list should be displayed",
+              "timedOut": null,
+              "duration": 5507,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "6fb5b6c5-b55e-4f80-a192-bfde5517fec6",
+              "parentUUID": "6fbabd8e-1aba-4e03-ad79-430f88e94345",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify the application behaviour when character serach results in multple results",
+              "fullTitle": "Verify additional flows for search functionality Verify the application behaviour when character serach results in multple results",
+              "timedOut": null,
+              "duration": 2816,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "6d5706de-8b2f-4f6d-beb3-c40895a315cf",
+              "parentUUID": "6fbabd8e-1aba-4e03-ad79-430f88e94345",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify the application behaviour when planet serach results in multple results",
+              "fullTitle": "Verify additional flows for search functionality Verify the application behaviour when planet serach results in multple results",
+              "timedOut": null,
+              "duration": 2836,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "d88e3679-9062-4e48-9d45-7be858c3e8be",
+              "parentUUID": "6fbabd8e-1aba-4e03-ad79-430f88e94345",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "84ce9d4d-a7cf-4bfc-ad40-a5ab52dcb1c6",
+            "61666ac4-36ca-4365-9da1-de771546e2ae",
+            "50b19b5d-8d9b-4905-ae01-547b7f0f9dfc",
+            "6fb5b6c5-b55e-4f80-a192-bfde5517fec6",
+            "6d5706de-8b2f-4f6d-beb3-c40895a315cf",
+            "d88e3679-9062-4e48-9d45-7be858c3e8be"
+          ],
+          "failures": [
+            "bb3a605f-76be-4693-bf77-56dd9ad263b8",
+            "ae7df832-3233-449c-8318-8be3dddd1673"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 30748,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

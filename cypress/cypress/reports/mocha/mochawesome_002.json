@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-23T14:40:22.806Z",
+    "end": "2021-09-23T14:40:30.468Z",
+    "duration": 7662,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "61864015-23b1-4cc7-8787-aba5e94356d7",
+      "title": "",
+      "fullFile": "cypress/integration/PlanetSearch.feature",
+      "file": "cypress/integration/PlanetSearch.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2386277e-dcb4-4c67-a8ab-c6bb975f12d3",
+          "title": "Verify Search functionality for planet search",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify the successful search of planet name",
+              "fullTitle": "Verify Search functionality for planet search Verify the successful search of planet name",
+              "timedOut": null,
+              "duration": 3302,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "2d33593d-1479-4c76-8616-69adf7ce9cb2",
+              "parentUUID": "2386277e-dcb4-4c67-a8ab-c6bb975f12d3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify the application behaviour when the plane entered is not valid",
+              "fullTitle": "Verify Search functionality for planet search Verify the application behaviour when the plane entered is not valid",
+              "timedOut": null,
+              "duration": 2864,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "853532d7-068e-4833-9a6b-5ca33fe2d81c",
+              "parentUUID": "2386277e-dcb4-4c67-a8ab-c6bb975f12d3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2d33593d-1479-4c76-8616-69adf7ce9cb2",
+            "853532d7-068e-4833-9a6b-5ca33fe2d81c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6166,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
